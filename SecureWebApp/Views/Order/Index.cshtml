@@ -1,0 +1,16 @@
+﻿@using SecureWebApp.Models
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<h2>Custeomer Order</h2>
+
+@{
+    List <Order> allOrders = ViewData["orders"] as List <Order>;
+
+    foreach (Order order in allOrders)
+    {
+    <p>@order.Product  | @order.OrderDate  |  @order.Status</p>
+    }
+}
