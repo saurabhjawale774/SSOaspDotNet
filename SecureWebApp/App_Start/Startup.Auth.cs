@@ -3,6 +3,10 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.Tokens;
+
 using Microsoft.Owin.Security.Google;
 using Owin;
 using SecureWebApp.Models;
@@ -63,6 +67,32 @@ namespace SecureWebApp
             //    ClientId = "",
             //    ClientSecret = ""
             //});
+
+            /*
+
+            app.UseCookieAuthentication(new CookieAuthenticationOptions()
+            {
+                AuthenticationScheme = "Cookies",
+                AutomaticAuthenticate = true
+            });
+
+            app.UseOpenIdConnectAuthentication(new OpenIdConnectOptions()
+            {
+                AuthenticationScheme = "oidc",
+                SignInScheme = "Cookies",
+                Authority = "https://{yourOktaDomain}",
+                ResponseType = OpenIdConnectResponseType.Code,
+                ClientId = "{clientId}",
+                ClientSecret = "{clientSecret}",
+                GetClaimsFromUserInfoEndpoint = true,
+                TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true
+                },
+                SaveTokens = true
+            });
+
+            */
         }
     }
 }

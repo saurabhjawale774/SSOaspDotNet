@@ -1,4 +1,5 @@
 ﻿using System;
+
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
@@ -6,6 +7,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using SSOService.Models;
+
 
 namespace SSOService
 {
@@ -58,11 +60,40 @@ namespace SSOService
             //   appId: "",
             //   appSecret: "");
 
-           /* app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            /* app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+             {
+                 ClientId = "hyry-5piu-5iouu",
+                 ClientSecret = "jhj-hggh5-gfhjfg"
+             });*/
+            /*
+            app.UseCookieAuthentication(new CookieAuthenticationOptions()
             {
-                ClientId = "hyry-5piu-5iouu",
-                ClientSecret = "jhj-hggh5-gfhjfg"
-            });*/
+                AuthenticationScheme = "Cookies",
+                AutomaticAuthenticate = true
+            });
+
+            app.UseOpenIdConnectAuthentication(new OpenIdConnectOptions()
+            {
+                AuthenticationScheme = "oidc",
+                SignInScheme = "Cookies",
+                Authority = "https://{yourOktaDomain}",
+                ResponseType = OpenIdConnectResponseType.Code,
+                ClientId = "{clientId}",
+                ClientSecret = "{clientSecret}",
+                GetClaimsFromUserInfoEndpoint = true,
+                TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true
+                },
+                SaveTokens = true
+            });
+
+            using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.Tokens;
+
+
+            */
         }
     }
 }
