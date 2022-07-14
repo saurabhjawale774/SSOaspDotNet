@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "dgSpecHash": "BgnZzMNv9nwQ/g6mjHMLvhv4OffpUE9t19X3WQAPKj5PEyx6ZjGjMYfwdjOOhkT08tf++pe1+iMRlXch6FBSZw==",
+  "success": false,
+  "projectFilePath": "D:\\IACSD\\7_DotNet\\E_Pramaan\\SecureWebApp\\SSOwebApp3\\SSOwebApp3.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1103",
+      "level": "Error",
+      "message": "Unable to find a stable package Microsoft.AspNetCore.Authentication.JwtBearer with version (>= 6.21.0)\r\n  - Found 124 version(s) in nuget.org [ Nearest version: 7.0.0-preview.1.22109.13 ]\r\n  - Found 0 version(s) in Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    },
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.AspNetCore.Authentication.Cookies with version (>= 6.21.0)\r\n  - Found 31 version(s) in nuget.org [ Nearest version: 2.2.0 ]\r\n  - Found 0 version(s) in Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.AspNetCore.Authentication.Cookies",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    },
+    {
+      "code": "NU1103",
+      "level": "Error",
+      "message": "Unable to find a stable package Microsoft.AspNetCore.Authentication.OpenIdConnect with version (>= 6.21.0)\r\n  - Found 123 version(s) in nuget.org [ Nearest version: 7.0.0-preview.1.22109.13 ]\r\n  - Found 0 version(s) in Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
+}
